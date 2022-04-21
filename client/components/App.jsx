@@ -1,37 +1,28 @@
 import React, { useState, useEffect } from 'react'
-import { getGreeting } from '../api/apiClient'
+import { Routes, Route, Link } from 'react-router-dom'
+// import { getGreeting } from '../api/apiClient'
 
 const App = () => {
-  const [greeting, setGreeting] = useState('')
-  const [count, setCount] = useState(0)
-  const [isError, setIsError] = useState(false)
+  // const [wish, setWish] = useState('')
 
-  useEffect(() => {
-    getGreeting()
-      .then((greeting) => {
-        console.log(greeting)
-        setGreeting(greeting)
-        setIsError(false)
-        return null
-      })
-      .catch((err) => {
-        console.log(err)
-        setIsError(true)
-      })
-  }, [count])
+  
 
   return (
     <>
-      {count}
-      <h1>{greeting}</h1>
-      {isError && (
-        <p style={{ color: 'red' }}>
-          There was an error retrieving the greeting.
-        </p>
-      )}
-      <button onClick={() => setCount(count + 1)}>Click</button>
+    <Routes>
+       <Route path='/' element={<Home />}></Route>
+       <Route path='/addAWish' element={<MakeAWish />}></Route>
+    </Routes>
     </>
   )
 }
 
 export default App
+//button to get all wishes
+  // - make api call to db 
+  // -- change whats in the store/global state to one wish
+
+  //display that global state
+
+  // button to ADD wish
+  // - route to the AllWishes page
