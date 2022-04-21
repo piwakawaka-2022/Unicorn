@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { getGreeting } from '../apiClient'
+import { getGreeting } from '../api/apiClient'
 
 const App = () => {
   const [greeting, setGreeting] = useState('')
