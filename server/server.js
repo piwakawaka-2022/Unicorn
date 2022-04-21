@@ -8,7 +8,7 @@ const server = express()
 server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 
-server.use('./api/v1/wishes', wishRoutes)
+server.use('/api/v1/wishes', wishRoutes)
 server.use(cors('*'))
 
 server.get('*', (req, res) => {

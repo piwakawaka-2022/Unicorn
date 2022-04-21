@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import React from 'react'
+import { Routes, Route} from 'react-router-dom'
 // import { getGreeting } from '../api/apiClient'
+import Home from './Home'
 
 const App = () => {
   // const [wish, setWish] = useState('')
@@ -11,7 +12,7 @@ const App = () => {
     <>
     <Routes>
        <Route path='/' element={<Home />}></Route>
-       <Route path='/addAWish' element={<MakeAWish />}></Route>
+       {/* <Route path='/addAWish' element={<MakeAWish />}></Route> */}
     </Routes>
     </>
   )
