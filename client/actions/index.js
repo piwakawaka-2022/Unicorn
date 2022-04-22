@@ -1,6 +1,7 @@
 import { fetchWishes } from '../api/wishes'
 
 export const SAVE_ALL_WISHES = 'SAVE_ALL_WISHES'
+export const SAVE_ONE_WISH = 'SAVE_ONE_WISH'
 export const LOADING = 'LOADING'
 export const SHOW_ERROR = 'SHOW_ERROR'
 
@@ -21,6 +22,13 @@ export function setError(errorMessage) {
   return {
     type: SHOW_ERROR,
     errorMessage: errorMessage,
+  }
+}
+
+export function saveWish(newWish) {
+  return {
+    type: SAVE_ONE_WISH,
+    newWish,
   }
 }
 

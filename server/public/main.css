@@ -20,6 +20,9 @@ body {
   margin: 0;
   min-height: 100vh;
   background: #d1ead8;
+  background-image: url("/images/unicorns/rainbow.png");
+  background-repeat: repeat;
+  /* background-size:cover */
 }
 
 button {
@@ -95,10 +98,102 @@ button.wish:active::before {
 }
 
 
-.unicorn-pic{
-  background-image:url();
+
+
+.one-wish-img{
   width:300px;
   height:300px;
-
-  /* not showing up yet ,don't know why */
+  border-radius: 50%;
+  justify-content: center;
+ 
 }
+
+.wish-display{
+  padding: 30px;
+  width: 500px;
+  align-content: center;
+}
+
+.each-wish{
+  width:600px;
+}
+
+.wish-title{
+ font-size: 30px;
+}
+
+.main-wish { 
+  height: 400px;
+  width: 400px;
+  border-radius: 75%;
+  justify-content: center;
+}
+
+
+/* .background{
+  position:absolute;
+
+} */
+.home-container {
+  z-index:1;
+  position:absolute;
+  top: 90px;
+  left: 300px
+  
+}
+
+.unicorn{
+  position:relative;
+  margin-top: 10px;
+}
+
+.unicorn04{
+  position:relative;
+  bottom: 100px;
+  left: 40px;
+  width: 200px;
+  height: 350px;
+  z-index:0;
+}
+
+.unicorn05{
+  position:relative;
+  bottom: 250px;
+  left: 40px;
+  width: 200px;
+  height: 300px;
+  z-index:0;
+}
+
+.rainbow{
+  position:relative;
+  margin-top: 10px;
+  margin-left:10px;
+}
+
+.rainbow02{
+  position:relative;
+  bottom: 50px;
+  left: 200px;
+  width: 200px;
+  height: 300px;
+  z-index:0;
+}
+
+.home-add-btn { 
+  padding-bottom: 40px;
+}
+input,
+textarea {
+  padding: 20px;
+  margin:20px 0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+  width: 100%;
+  border: 2px rgb(254, 186, 254) solid;
+  font-size: 20px
+}
+
+.imgUrl {
+  font-size: 15px
+} 

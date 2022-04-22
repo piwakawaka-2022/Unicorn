@@ -20,7 +20,11 @@ const AllWishes = () => {
       <br></br>
       <ul>
           {wishes.map((oneWish) => <OneWish key={oneWish.id} wishes={oneWish} />)}
-        </ul>
+          <br></br>
+      </ul>
+      {/* <img className='rainbow' src='/images/unicorns/rainbow.png' /> */}
+
+        
     </div>
   )
 }

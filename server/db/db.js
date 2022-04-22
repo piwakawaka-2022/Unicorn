@@ -5,6 +5,11 @@ function getWishes(db = connection) {
   return db('wishes').select()
 }
 
+function saveWish(wishObj, db = connection) {
+  return db('wishes').insert(wishObj)
+}
+
 module.exports = {
   getWishes,
+  saveWish,
 }

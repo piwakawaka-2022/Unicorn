@@ -10,9 +10,10 @@ function Wish (props) {
     return (
     
       <div className="each-wish" >
-      <h2>{title}</h2>
-      <h3>{description}</h3>
-      <img src={img} />
+      <p className='wish-title'>{title}</p>
+      <p>{description}</p>
+      <img className='one-wish-img' src={img} />
+      <br></br>
       </div>
     
     )
