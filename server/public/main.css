@@ -1,7 +1,7 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
-/* ------button-------*/
-
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+
+/* ------button-------*/
 * {
   box-sizing: border-box;
 }
@@ -95,3 +95,10 @@ button.wish:active::before {
 }
 
 
+.unicorn-pic{
+  background-image:url();
+  width:300px;
+  height:300px;
+
+  /* not showing up yet ,don't know why */
+}

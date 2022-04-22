@@ -1,24 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 import { Routes, Route} from 'react-router-dom'
-// import { getGreeting } from '../api/apiClient'
 import Home from './Home'
+import AllWishes from './AllWishes'
+import { getAllTheWishes } from '../actions'
 
 const App = () => {
-  // const [wish, setWish] = useState('')
-
-  
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(getAllTheWishes())
+}, [])
 
   return (
     <>
     <Routes>
        <Route path='/' element={<Home />}></Route>
-       {/* <Route path='/addAWish' element={<MakeAWish />}></Route> */}
+       <Route path='/allWishes' element={<AllWishes />}></Route>
     </Routes>
     </>
   )
 }
 
 export default App
+
 //button to get all wishes
   // - make api call to db 
   // -- change whats in the store/global state to one wish

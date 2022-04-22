@@ -1,3 +1,10 @@
 import { combineReducers } from 'redux'
+// import loading from './loading'
+import wishes from './wishes'
 
-export default combineReducers({})
+const everything = combineReducers({
+  wishes,
+  // loading
+})
+
+export default everything
